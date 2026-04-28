@@ -70,7 +70,8 @@ export default function BugAnalyticsPage() {
 
   const [analytics, setAnalytics] = useState(null);
   const [bugs, setBugs] = useState([]);
-  const base_url = import.meta.env.VITE_BASE_URL;
+  // const base_url = import.meta.env.VITE_BASE_URL;
+  const base_url = 'http://localhost:4000/api/';
 
   const fetchAll = async () => {
     try {

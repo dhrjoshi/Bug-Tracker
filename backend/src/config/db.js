@@ -1,7 +1,8 @@
 const mongoose = require("mongoose");
 const dotenv = require("dotenv");
 dotenv.config();
-const DB_URL = process.env.MONGO_URL;
+// const DB_URL = process.env.MONGO_URL;
+const DB_URL = 'mongodb://localhost/BugTracker';
 
 const connectDB = async () => {
   try {

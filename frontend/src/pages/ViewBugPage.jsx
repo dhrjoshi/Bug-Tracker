@@ -120,7 +120,8 @@ function daysAgo(n) {
   d.setDate(d.getDate() - n);
   return d;
 }
-const base_url = import.meta.env.VITE_BASE_URL;
+// const base_url = import.meta.env.VITE_BASE_URL;
+const base_url = 'http://localhost:4000/api/';
 export default function ViewBugsPage() {
   const toast = useToast();
 

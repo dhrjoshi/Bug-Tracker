@@ -82,7 +82,8 @@ export default function LogBugPage() {
         estimatedFixHours: form.estimatedFixHours,
         dateReported: form.dateReported, // backend can convert to Date
       };
-      const base_url = import.meta.env.VITE_BASE_URL;
+      // const base_url = import.meta.env.VITE_BASE_URL;
+      const base_url = 'http://localhost:4000/api/';
       const res = await axios.post(`${base_url}create/bug`, payload);
 
       toast({
